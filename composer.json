@@ -1,7 +1,7 @@
 {
     "name": "learnful_labs/learnful_scribe_profile",
     "description": "The installation profile for Learnful Scribe",
-    "type": "profile",
+    "type": "drupal-custom-profile",
     "authors": [
         {
             "name": "Yasin Dahi",
