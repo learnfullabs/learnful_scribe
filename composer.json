@@ -1,5 +1,5 @@
 {
-    "name": "learnful_labs/learnful_scribe_profile",
+    "name": "learnful_labs/learnful_scribe",
     "description": "The installation profile for Learnful Scribe",
     "type": "drupal-custom-profile",
     "authors": [
