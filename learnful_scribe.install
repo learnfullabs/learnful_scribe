@@ -17,7 +17,10 @@ function learnful_scribe_install() {
   standard_install();
 
   // Move gin_custom.css to files/
-  $filename = 'gin_custom.css';
-  $output = file_get_contents(drupal_get_path('profile', 'learnful_scribe') . '/css/' . $filename);
-  file_save_data($output, 'public://' . $filename, FILE_EXISTS_REPLACE);
+  $gin_custom = file_get_contents(drupal_get_path('profile', 'learnful_scribe') . '/css/gin_custom.css');
+  file_save_data($gin_custom, 'public://' . $filename, FILE_EXISTS_REPLACE);
+
+  // Move logo to files/
+  $scribe_icon = file_get_contents(drupal_get_path('profile', 'learnful_scribe') . '/images/learnful_scribe.png');
+  file_save_data($scribe_icon, 'public://' . $filename, FILE_EXISTS_REPLACE);
 }
