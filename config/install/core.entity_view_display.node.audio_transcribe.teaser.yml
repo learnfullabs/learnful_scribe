@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.audio_transcribe.field_audio
+    - node.type.audio_transcribe
+  module:
+    - user
+id: node.audio_transcribe.teaser
+targetEntityType: node
+bundle: audio_transcribe
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_audio: true

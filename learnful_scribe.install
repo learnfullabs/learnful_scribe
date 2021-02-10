@@ -1,0 +1,23 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the profilename install profile.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function learnful_scribe_install() {
+  // First, do everything in standard profile.
+  include_once DRUPAL_ROOT . '/core/profiles/standard/standard.install';
+  standard_install();
+
+  // Move gin_custom.css to files/
+  $filename = 'gin_custom.css';
+  $output = file_get_contents(drupal_get_path('profile', 'learnful_scribe') . '/css/' . $filename);
+  file_save_data($output, 'public://' . $filename, FILE_EXISTS_REPLACE);
+}

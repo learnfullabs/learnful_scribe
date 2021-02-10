@@ -1,0 +1,12 @@
+{
+    "name": "learnful_labs/learnful_scribe_profile",
+    "description": "The installation profile for Learnful Scribe",
+    "type": "profile",
+    "authors": [
+        {
+            "name": "Yasin Dahi",
+            "email": "ymdahi@gmail.com"
+        }
+    ],
+    "require": {}
+}

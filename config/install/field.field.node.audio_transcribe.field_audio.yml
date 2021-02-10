@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audio
+    - node.type.audio_transcribe
+  module:
+    - ibm_watson
+id: node.audio_transcribe.field_audio
+field_name: field_audio
+entity_type: node
+bundle: audio_transcribe
+label: Audio
+description: 'Upload an audio file to be analzed.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'wav mp3'
+  max_filesize: '10 MB'
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: ibm_watson

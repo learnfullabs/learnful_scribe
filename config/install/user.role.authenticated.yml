@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies: {  }
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access shortcuts'
+  - 'access toolbar'
+  - 'access user contact forms'
+  - 'access user profiles'
+  - 'create audio_transcribe content'
+  - 'delete own audio_transcribe content'
+  - 'edit own audio_transcribe content'
+  - 'revert page revisions'
+  - 'search content'
+  - 'view audio_transcribe revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'

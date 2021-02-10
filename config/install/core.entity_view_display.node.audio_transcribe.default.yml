@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.audio_transcribe.field_audio
+    - node.type.audio_transcribe
+  module:
+    - ibm_watson
+    - user
+id: node.audio_transcribe.default
+targetEntityType: node
+bundle: audio_transcribe
+mode: default
+content:
+  field_audio:
+    weight: 0
+    label: hidden
+    settings:
+      ibm_watson_title: ''
+      ibm_watson_showtimestamps: '1'
+      ibm_watson_autoplay: 0
+      ibm_watson_loop: 0
+      ibm_watson_showinfo: 0
+      ibm_watson_link: ''
+    third_party_settings: {  }
+    type: ibm_watson
+    region: content
+hidden:
+  links: true

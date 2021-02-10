@@ -1,0 +1,56 @@
+name: Learnful Scribe
+type: profile
+description: 'Open source audio-to-text auto-transcribe platform'
+core_version_requirement: '^8.8'
+
+distribution:
+  name: Learnful Scribe
+
+install:
+  - history
+  - big_pipe
+  - ban
+  - menu_link_content
+  - menu_ui
+  - page_cache
+  - dynamic_page_cache
+  - telephone
+  - datetime
+  - datetime_range
+  - block_content
+  - breakpoint
+  - color
+  - config
+  - comment
+  - contextual
+  - contact
+  - quickedit
+  - help
+  - image
+  - options
+  - path
+  - taxonomy
+  - dblog
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - editor
+  - ckeditor
+  - tour
+  - ibm_watson
+  - token
+  - gin_login
+  - gin_toolbar
+
+dependencies:
+  - node
+  - block
+  - views
+
+themes:
+  - gin
